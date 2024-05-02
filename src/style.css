@@ -1,0 +1,20 @@
+header img{
+    width: 150px;
+}
+header{
+    color: #AD4601;
+}
+
+main{
+    background-color: #AD8318;
+    height: 70vh;
+}
+
+.width{
+    max-width: 350px;
+}
+
+#btn-contato{
+    width: 150px;
+    height: 50px;
+}

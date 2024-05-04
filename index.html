@@ -8,70 +8,78 @@
     <link rel="stylesheet" href="./src/style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
 </head>
-<body>
-    <header class="d-flex justify-content-center align-items-center gap-5 p-3">
-        <div class="logo-title d-flex flex-column justify-content-center align-items-center">
-            <img src="./src/img/logo.png" alt="logotipo">
-            <h5 class="d-none">Escavações e Perfurações</h5>
-        </div>
-        <!-- <nav id="nav-menu" class="pt-3">
-            <ul class="d-flex gap-5">
-                <li><a href="#">Início</a></li>
-                <li><a href="#">Meio</a></li>
-                <li><a href="#">Fim</a></li>
-            </ul>
-        </nav>
-        <button class="btn border" id="nav-btn">
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
-            <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/></svg>
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x-lg" viewBox="0 0 16 16"><path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8z"/></svg>
-        </button> -->
-    </header>
-    <main class="">
-        <div class="row">
-            <div class="col-12">
-                <img src="./src/img/foto1.png" alt="" style="width: 100vw;">
-            </div>
-        </div>
-        <div class="container-fluid width mt-5">
-            <div id="carouselExampleIndicators" class="carousel slide">
-                <div class="carousel-indicators">
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
-                        class="active" aria-current="true" aria-label="Slide 1"></button>
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
-                        aria-label="Slide 2"></button>
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
-                        aria-label="Slide 3"></button>
-                </div>
-                <div class="carousel-inner">
 
-                    <div class="carousel-item active">
-                        <img src="./src/img/foto2.png" class="d-block w-100" alt="...">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="./src/img/foto3.png" class="d-block w-100" alt="...">
-                    </div>
-                </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
-                    data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
-                    data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                </button>
+<body>
+    <header class="d-flex flex-column align-items-center p-3 border">
+        <img src="./src/img/logo.png" alt="logotipo">
+    </header>
+
+    <main>
+        <div class="row">
+            <div class="col-12 d-flex justify-content-center">
+                <img id="img-bg" src="./src/img/foto1.png">
             </div>
         </div>
-        <div class="container-fluid d-flex justify-content-center align-items-center mt-4 mb-5">
-            <button id="btn-contato" class="btn btn-danger" type="submit">Contato</button>
+        <div class="row">
+            <div class="col-12 offset-md-4 col-md-4 d-flex flex-column justify-content-center align-items-center p-5">
+            
+                <h4 class="mb-4">Escavações e Perfurações</h4>
+
+            <!-- CARROSEL -->
+
+                <div id="carouselExampleIndicators" class="carousel slide">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                            class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                            aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                            aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner">
+
+                        <div class="carousel-item active">
+                            <img src="./src/img/img-carosel/fotoA.jpg" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./src/img/img-carosel/fotoB.jpg" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./src/img/img-carosel/fotoC.jpg" class="d-block w-100" alt="...">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+            <div class="row mb-5">
+                <div class="col-12 d-flex justify-content-center align-items-center gap-3">
+
+                    <button id="btn-whats" class="btn">
+                        <img src="./img-buttons/whatsapp.png" alt="" style="width: 50px;">
+                    </button>
+
+                    <button id="btn-insta" class="btn">
+                        <img src="./img-buttons/instagram.png" alt="" style="width: 50px;">
+                    </button>
+                </div>
+            </div>
         </div>
     </main>
+
     <footer class="d-flex justify-content-center align-items-end">
-        <p class="mb-3" style="margin-bottom: 0;">Todos os direitos reservados &copy; 2024</p>
+        <p class="mb-3">Todos os direitos reservados &copy; 2024</p>
     </footer>
 
+    <!-- SCRIPTS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="./src/script.js"></script>
 </body>

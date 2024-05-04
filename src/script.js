@@ -1,12 +1,10 @@
-const btnContato = document.getElementById('btn-contato');
-const btnMenuMobile = document.getElementById('nav-btn')
+const btnWhats = document.getElementById('btn-whats')
+const btnInsta = document.getElementById('btn-insta')
 
-var btnPlaceHolder = false
+btnWhats.addEventListener('click', function(event){
+    window.location.href = 'https://wa.me/5519998726671'
+})
 
-btnContato.addEventListener('click', function (event) {
-    window.location.href = 'https://wa.me/5519998726671';
-});
-
-btnMenuMobile.addEventListener('click', function(event){
-    btnMenuMobile.classList.toggle('')
+btnInsta.addEventListener('click', function(event){
+    window.location.href = 'https://www.instagram.com/terratree_escavacoes/'
 })
